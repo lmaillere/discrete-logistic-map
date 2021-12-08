@@ -26,7 +26,7 @@ state[0] = .1
 for i in range(nIterations):
     state[i+1] = discr_log(state[i], r)
 
-# cobweb construction
+# cobweb construction: x((k+1)T) against x(kT) in the cobweb way
 cobx = np.repeat(state, 2)[0:-1]
 coby = np.concatenate(([0], np.repeat(state, 2)[2:]))
 
@@ -47,6 +47,6 @@ ax2.grid()
 
 fig.suptitle("Discrete time logistic model $r={}$".format(r))
 
-#fig.show()
+# show the figure in the plot
 st.pyplot(fig)
 
