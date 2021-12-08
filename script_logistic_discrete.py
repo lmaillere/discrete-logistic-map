@@ -6,7 +6,7 @@ st.title("Discrete time logistic model")
 
 st.markdown("This simple app simulates the discrete time logistic model (May, 1976) from simple to (very) complicated dynamics. The model reads:")
 st.markdown("$x((k+1)T) = r x(kT)(1-x(kT))$")
-st.markdown("The user can ste the number of iterations and the intrinsic growth rate $r$ to visualize the transition to chaotic dynamics.")
+st.markdown("The user can set the number of iterations and the intrinsic growth rate $r$ to visualize the transition to chaotic dynamics.")
 
 # input of the number of iterations and intrinsic growth rate
 nIterations = st.slider('Enter the number of iterations:', min_value=2, max_value=60, value = 20, step=1)
